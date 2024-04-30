@@ -16,10 +16,18 @@ def   motorrad():
 
 @app.route('/carart')
 def carart():
-    return render_template('carart.html')
+   return render_template('carart.html')
 @app.route('/academy')
 def academy():
-   return render_template('academy.html')
+    return render_template('academy.html')
+
+@app.route('/register')
+def register():
+   return render_template('register.html')
+
+@app.route('/terms')
+def terms():
+    return render_template('terms.html')
 
 if __name__ == '__main__':
    app.run(debug=True)
