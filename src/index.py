@@ -10,13 +10,25 @@ def home():
 def about():
    return render_template('about.html')
 
-@app.route('/merchant')
+@app.route('/cars')
 def merchant():
-   return render_template('merchant.html')
+   return render_template('cars.html')
 
-@app.route('/register')
+@app.route('/merchandising')
+def merchandising():
+   return render_template('merchandising.html')
+
+@app.route('/motorsport')
 def register():
-   return render_template('register.html')
+   return render_template('motorsport.html')
+
+@app.route('/team')
+def team():
+   return render_template('team.html')
+
+@app.route('/academy')
+def academy():
+   return render_template('academy.html')
 
 if __name__ == '__main__':
    app.run(debug=True)
