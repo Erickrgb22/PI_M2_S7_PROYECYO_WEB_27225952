@@ -1,5 +1,43 @@
 {% extends "layout.html" %}
 
 {% block content%}
-
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{ url_for('static', filename='assets/PERSONAL.jpg') }}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>QUIERES SER PARTE DEL EQUIPO ? TE PRESENTAMOS LA BMW ACADEMY</h2>
+        <p style="margin: 30%;">Toca las flechas para obtener más información</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='assets/SERVICE.jpg') }}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Te ofrecemos la oportunidad de formar parte de nuestro equipo</h5>
+        <p>Con la BMW Academy tendras la oportuidad de adquirir los conocimientos necesarios para aplicar a un puesto de trabajo en cualquiera de nuestros centros aurtorizados de servicos, solo debes inscribirte. Si apruebas la academia con un promedio sobresaliente, aplicas para una vancante de un puesto en alguno de nuestros centros autorizados en todo el mundo. No solo en el país, si conducir es tu pasión y deseas estar más cerca de lo que te apaciona la BMW Academy es para ti.</p>
+         <p style="margin: 25%;">Toca las flechas para obtener más información</p>       
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='assets/PITS.jpeg') }}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>QUIERES ENTRAR A LOS PITS? REGISTRATE!</h1>
+       <!-- Añadir boton de Ir al Registro-->
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 {% endblock %}
