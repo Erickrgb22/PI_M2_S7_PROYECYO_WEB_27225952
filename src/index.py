@@ -13,6 +13,10 @@ def motorsport():
 @app.route('/motorrad')
 def   motorrad():
       return render_template('motorrad.html')
+
+@app.route('/carart')
+def carart():
+    return render_template('carart.html')
 @app.route('/academy')
 def academy():
    return render_template('academy.html')
